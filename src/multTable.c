@@ -25,7 +25,12 @@ int main(int argc, char **argv) {
   for(int i = 1; i <= n; i++){
     printf("\t%d",i);
   }
-
+  for(int i = 1; i <= n; i++){
+    printf("\n%d",i);
+    for(int j = 1; j <= n; j++){
+      printf("\t%d",i*i);
+    }
+  }
 
   return 0;
 }
