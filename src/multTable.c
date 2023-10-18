@@ -22,6 +22,10 @@ int main(int argc, char **argv) {
   }
 
   //TODO: place your code here
+  for(int i = 1; i <= n; i++){
+    printf("\t%d",i);
+  }
+
 
   return 0;
 }
