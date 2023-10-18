@@ -27,10 +27,20 @@ int main(int argc, char **argv) {
   int guess = -10;
   int numGuesses = 0;
 
-  printf("Guess-A-Number Game!\n");
+  printf("______|Guess-A-Number Game!|_______\n");
   printf("Enter a number between 1 and %d\n", n);
-
+ 
   //TODO: place your code here
+  while(guess!=number){
+    printf("Enter your Guess number:");
+    scanf("%i",&guess);
+    if(guess<number){
+      printf("Your guess number lower than orignal number\n");
+    } else{
+      printf("Your guess number higher than the orignal number\n");
+    }
+    numGuesses++;
+  }
 
   printf("Congratulations, you found it!  Number of guesses: %d\n", numGuesses);
   return 0;
