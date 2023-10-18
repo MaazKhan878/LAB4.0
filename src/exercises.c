@@ -25,16 +25,16 @@ int main(int argc, char **argv) {
   }
 
   //1. Rewrite the given for loop as an equivalent while loop
-  for(int i=10; i<20; i+=3) {
-    printf("%d ", i);
+  int i;
+  while(i<20){
+    printf("%d",i);
+    i+=3;
   }
   printf("\n");
 
   //2. Rewrite the given while loop as an equivalent for loop
-  int k = 3;
-  while(k > -4) {
-    printf("%d ", k);
-    k--;
+  for(int k = 3; k > -3 ; k--){
+    printf("%d",k);
   }
   printf("\n");
 
